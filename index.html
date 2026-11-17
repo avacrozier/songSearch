@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- The next line came directly from the Google Fonts Icons page -->
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="60px" width="60px" fill="#A6A670"><path d="M24.2,34.62q1.75-1.78 1.75-4.32V14.55h6.1v-3H23.7V25.3q-0.85-0.55-1.83-0.82T19.9,24.2q-2.54,0-4.32,1.78T13.8,30.31t1.78,4.32t4.33,1.77t4.29-1.78ZM24.01,44q-4.14,0-7.78-1.58t-6.36-4.3t-4.3-6.37T4,23.98t1.58-7.78t4.3-6.34t6.37-4.28T24.03,4t7.78,1.57t6.34,4.28t4.28,6.35T44,23.99t-1.57,7.78t-4.28,6.35t-6.35,4.3T24.01,44Zm0.01-3q7.07,0 12.03-4.98T41,23.98T36.06,11.95T24,7q-7.05,0-12.02,4.94T7,24q0,7.05 4.98,12.02T24.03,41ZM24,24Z"/></svg>
+        <h1 id="pageTitle">Song Search</h1>
+    </header>
+    <main>
+        <section id="description">
+            <p id="welcome">Welcome to Song Search. This site makes it possible to search lyrics and guitar tabs with just the name of the song.</p>
+        </section>
+        <section id="search">
+            <h2 id="instructions">Please enter a song title below:</h2>
+            <input id="songInput" type="text">
+            <div id="buttons">
+                <button id="findLyrics" class="searchButton">Find Lyrics</button>
+                <button id="findTab" class="searchButton">Find Tab</button>
+            </div>  
+            <!-- Line 32 was written with CoPilot-->          
+            <pre id="lyricsResult" aria-live="polite"></pre>
+        </section>
+    </main>
+    <script src="utilities.js"></script>
+</body>
+</html>
