@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
@@ -18,20 +17,22 @@
         <h1 id="pageTitle">Song Search</h1>
     </header>
     <main>
-        <section id="description">
-            <p id="welcome">Welcome to Song Search. This site makes it possible to search lyrics and guitar tabs with just the name of the song.</p>
-        </section>
+        <p id="welcome">Welcome to Song Search. This site makes it possible to search lyrics and song information with just the name of the song.</p>
         <section id="search">
             <h2 id="instructions">Please enter a song title below:</h2>
-            <input id="songInput" type="text">
+            <input id="songInput" type="text">   
             <div id="buttons">
                 <button id="findLyrics" class="searchButton">Find Lyrics</button>
-                <button id="findTab" class="searchButton">Find Tab</button>
+                <button id="findInfo" class="searchButton">Find Song Information</button>
             </div>  
-            <!-- Line 32 was written with CoPilot-->          
-            <pre id="lyricsResult" aria-live="polite"></pre>
+            <!-- Line 32 was written with Claude -->          
+            <div id="lyricsResult" aria-live="polite"></div>
         </section>
     </main>
+    <footer>
+        <p class="footer">© 2026 Ava Crozier</p>
+        <br>
+    </footer>
     <script src="utilities.js"></script>
 </body>
 </html>

@@ -21,3 +21,13 @@ Now use https://publicapis.io/songsterr-music-api songsterr's api to create getT
 Is there a way I can embed the tab instead of opening in a new window? I keep getting "Load Failed" when testing
 
 Okay then update the js so the button automatically opens a new tab with the songsterr pulled up
+
+The Songsterr API doesn't work for this project -- use the iTunes API to change the getTabFromInput() function to getSongInfoFromInput() and link it to that song's album cover, snippet, artist, and information from https://performance-partners.apple.com/search-api i've already updated the CSS and HTML
+
+Move the album cover above the title, center it on the search section, increase the size to 500px, give it a border radius of 10, and change the iTunes link to myTurquoise
+
+Is there a way to pull a higher quality album cover image?
+
+Add a check in the javascript functions to confirm that the lyrics and information pulled are for the same song by confirming the artist in the API
+
+Please add media queries to preserve the integrity of my design on mobile with breakpoints at 320px, 480px, 768px, and 1024 px. everything should wrap, and the buttons should stack in mobile view
